@@ -7,6 +7,7 @@
 body{
   font-family:'Montserrat', sans-serif;
   background:#f6f6f2;
+  color:#222;
 }
 
 .container{
@@ -18,6 +19,7 @@ body{
 /* TOP LINE */
 
 .top-line{
+  width:100%;
   height:28px;
   background:#4b9700;
 }
@@ -33,9 +35,10 @@ body{
 
 .nav-container{
   height:90px;
+
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
@@ -72,8 +75,10 @@ body{
 .menu-btn{
   width:70px;
   height:42px;
+
   border-radius:12px;
   border:1px solid #777;
+
   background:transparent;
   cursor:pointer;
 }
@@ -83,7 +88,7 @@ body{
 .hero{
   height:620px;
 
-  background-image:url('../assets/tree-list-page/hero-bg.jpg');
+  background-image:url('../assets/tree-varieties-page/hero-bg.jpg');
   background-size:cover;
   background-position:center;
 
@@ -103,45 +108,56 @@ body{
 .hero-content{
   position:relative;
   z-index:2;
+
   text-align:center;
   color:white;
 }
 
 .hero-label{
   color:white;
-
   font-size:20px;
   font-weight:400;
-
-  line-height:1.6;
 }
 
 .hero h1{
   font-size:72px;
-  margin:20px 0;
   line-height:1.1;
+  margin:20px 0;
 }
 
 .hero p{
   font-size:20px;
+  font-weight:400;
 }
 
 .hero-btn{
-  margin-top:35px;
-  background:#5da20f;
+  margin-top:40px;
+
+  background:#1d4128;
   color:white;
+
   border:none;
-  border-radius:50px;
-  padding:18px 36px;
+  border-radius:40px;
+
+  padding:22px 52px;
+
+  font-size:18px;
   font-weight:700;
+
   cursor:pointer;
+
+  transition:.3s;
+}
+
+.hero-btn:hover{
+  background:#dfe7d9;
+  transform:translateY(-3px);
 }
 
 /* BREADCRUMBS */
 
 .breadcrumbs{
   padding:35px 0;
-  color:#666;
 }
 
 .breadcrumb-row{
@@ -166,8 +182,6 @@ body{
   color:#5da20f;
   font-weight:400;
 }
-
-/* FILTERS */
 
 /* FILTERS */
 
@@ -225,16 +239,15 @@ body{
   color:white;
 }
 
-/* TREE SECTION */
+/* TREES */
 
 .trees{
-  padding:50px 0 140px;
+  padding:20px 0 140px;
 }
 
 .trees h2{
   font-size:36px;
   font-weight:500;
-
   margin-bottom:45px;
 
   color:#1d4128;
@@ -248,54 +261,79 @@ body{
 
 .tree-card{
   background:white;
-  border-radius:25px;
-  padding:40px;
+  border-radius:28px;
 
-  text-align:center;
+  overflow:hidden;
 
-  box-shadow:0 15px 35px rgba(0,0,0,.08);
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
 
   transition:.35s;
-  cursor:pointer;
 }
 
 .tree-card:hover{
-  transform:translateY(-10px);
+  transform:translateY(-8px);
 }
 
-.tree-card img{
-  width:120px;
-  height:120px;
+.card-image{
+  height:220px;
+  background:#f3f3f0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card-content{
+  padding:28px;
+}
+
+.card-content h3{
+  font-size:26px;
+  color:#0F4229;
+  margin-bottom:14px;
+}
+
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+
+  margin-bottom:18px;
+}
+
+.badge{
+  background:#eef6e8;
+  color:#3f7f18;
+
+  padding:8px 14px;
+  border-radius:999px;
+
+  font-size:13px;
+  font-weight:600;
+}
+
+.card-content p{
+  line-height:1.7;
+  color:#666;
+  font-size:15px;
+}
+
+.tree-silhouette{
+  width:130px;
+
+  opacity:.16;
+
   object-fit:contain;
-  margin-bottom:20px;
+
+  filter:grayscale(100%);
 }
 
-.tree-card h3{
-  font-size:28px;
-  color:#1d4128;
-}
+/* RESPONSIVE */
 
-.tree-card p{
-  margin-top:8px;
-  color:#777;
-}
-
-.tree-link{
-  text-decoration:none;
-  color:inherit;
-  display:block;
-}
-
-/* MOBILE */
-
-@media(max-width:1000px){
+@media(max-width:1100px){
 
   .tree-grid{
     grid-template-columns:repeat(2,1fr);
-  }
-
-  .hero h1{
-    font-size:48px;
   }
 
 }
@@ -308,6 +346,10 @@ body{
 
   .nav{
     display:none;
+  }
+
+  .hero h1{
+    font-size:46px;
   }
 
 }

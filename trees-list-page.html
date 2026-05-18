@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Підбір дерева | OldDuck’s Garden</title>
+  <title>Підбір дерев | OldDuck's Garden</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="./css/trees-list-page.css">
 </head>
+
 <body>
 
   <!-- TOP LINE -->
@@ -20,12 +21,13 @@
 
   <!-- HEADER -->
   <header class="header">
+
     <div class="container nav-container">
 
-      <a href="index.html" class="logo">
+      <div class="logo">
         <span class="light">OldDuck’s</span>
         <span class="bold">Garden</span>
-      </a>
+      </div>
 
       <nav class="nav">
         <a href="index.html">Головна</a>
@@ -37,6 +39,7 @@
       <button class="menu-btn">...</button>
 
     </div>
+
   </header>
 
   <!-- HERO -->
@@ -44,18 +47,19 @@
 
     <div class="overlay"></div>
 
-    <div class="container hero-content">
+    <div class="hero-content">
 
-      <div class="breadcrumbs">
-        <a href="index.html">Головна</a>
-        <span>/</span>
-        <span>Підбір дерев</span>
-      </div>
+      <span class="hero-label">
+        ПІДБІР ДЕРЕВ
+      </span>
 
-      <h1>Знайди своє дерево</h1>
+      <h1>
+        Оберіть ідеальне <br>
+        дерево для свого саду
+      </h1>
 
       <p>
-        Обери найкраще плодове дерево для свого саду
+        Знайдіть найкращі сорти дерев саме для ваших умов
       </p>
 
       <button class="hero-btn">
@@ -66,77 +70,145 @@
 
   </section>
 
+  <!-- BREADCRUMBS -->
+  <section class="breadcrumbs">
+
+  <div class="container breadcrumb-row">
+
+    <span>Головна</span>
+
+    <span class="arrow">
+      ›
+    </span>
+
+    <span class="active-page">
+      Підбір дерев
+    </span>
+
+  </div>
+
+</section>
   <!-- FILTERS -->
-  <section class="filters-section">
+  <section class="filters">
+
+  <div class="container">
+
+    <div class="filter-header">
+
+      <h3>
+        Фільтр за метою
+      </h3>
+
+      <p>
+        Оберіть що важливо для вас
+      </p>
+
+    </div>
+
+    <div class="filter-buttons">
+
+      <button class="active">
+        Усі дерева
+      </button>
+
+      <button>
+        Зимове зберігання
+      </button>
+
+      <button>
+        Раннє достигання
+      </button>
+
+      <button>
+        Свіже вживання
+      </button>
+
+      <button>
+        Концервація
+      </button>
+
+      <button>
+        Декоративні
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- TREE GRID -->
+  <section class="trees">
 
     <div class="container">
 
-      <h2>Оберіть тип дерева</h2>
+      <h2>Популярні культури</h2>
 
-      <div class="filters">
-
-        <button class="filter active">Всі</button>
-        <button class="filter">Яблуня</button>
-        <button class="filter">Груша</button>
-        <button class="filter">Вишня</button>
-        <button class="filter">Черешня</button>
-        <button class="filter">Слива</button>
-        <button class="filter">Абрикос</button>
-        <button class="filter">Персик</button>
-        <button class="filter">Айва</button>
-
-      </div>
-
-      <!-- TREE GRID -->
       <div class="tree-grid">
+        
+        <a href="tree-varieties-page.html?tree=apple" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/apple.png" alt="">
+    <h3>Яблуня</h3>
+    <p>10 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/apple.png" alt="">
-          <h3>Яблуня</h3>
-          <p>Класичне плодове дерево для будь-якого саду.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=pear" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/pear.png" alt="">
+    <h3>Груша</h3>
+    <p>8 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/pear.png" alt="">
-          <h3>Груша</h3>
-          <p>Солодкі та соковиті плоди з чудовим ароматом.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=cherry" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/cherry.png" alt="">
+    <h3>Вишня</h3>
+    <p>12 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/cherry.png" alt="">
-          <h3>Вишня</h3>
-          <p>Ідеальна для компотів, варення та свіжих ягід.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=sweet-cherry" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/merry.png" alt="">
+    <h3>Черешня</h3>
+    <p>16 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/merry.png" alt="">
-          <h3>Черешня</h3>
-          <p>Солодка жовта черешня для літнього саду.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=plum" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/plum.png" alt="">
+    <h3>Слива</h3>
+    <p>11 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/plum.png" alt="">
-          <h3>Слива</h3>
-          <p>Універсальне дерево для сушіння та варення.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=apricot" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/apricot.png" alt="">
+    <h3>Абрикос</h3>
+    <p>18 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/apricot.png" alt="">
-          <h3>Абрикос</h3>
-          <p>Ароматні літні плоди з яскравим смаком.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=peach" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/peach.png" alt="">
+    <h3>Персик</h3>
+    <p>20 сортів</p>
+  </div>
+</a>
 
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/peach.png" alt="">
-          <h3>Персик</h3>
-          <p>Ніжні й солодкі плоди для теплого клімату.</p>
-        </div>
-
-        <div class="tree-card">
-          <img src="./assets/tree-list-page/quince.png" alt="">
-          <h3>Айва</h3>
-          <p>Запашні плоди для десертів і консервації.</p>
-        </div>
+        <a href="tree-varieties-page.html?tree=quince" class="tree-link">
+  <div class="tree-card">
+    <img src="./assets/tree-list-page/quince.png" alt="">
+    <h3>Айва</h3>
+    <p>6 сортів</p>
+  </div>
+</a>
 
       </div>
 
