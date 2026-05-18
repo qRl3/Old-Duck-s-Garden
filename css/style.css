@@ -84,7 +84,7 @@ body{
 .hero{
   height:850px;
 
-  background-image:url('./assets/hero-bg.jpg');
+  background-image:url('../assets/hero-bg.jpg');
   background-size:cover;
   background-position:center;
 
@@ -215,7 +215,7 @@ body{
 
   padding:110px 0 160px;
 
-  background-image:url('./assets/services-bg.jpg');
+  background-image:url('../assets/services-bg.jpg');
   background-size:cover;
   background-position:center;
 }
