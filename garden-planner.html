@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Планувальник ділянки</title>
+
+    <link rel="stylesheet" href="css/garden-planner.css">
+</head>
+
+<body>
+
+    <section class="planner-page">
+
+        <div class="planner-container">
+
+            <h1>Планувальник ділянки</h1>
+
+            <p class="subtitle">
+                Введіть розміри вашої ділянки та виберіть рослини
+            </p>
+
+            <!-- Розміри ділянки -->
+            <div class="sizes-block">
+
+                <div class="input-box">
+                    <label>Ширина ділянки (м)</label>
+                    <input type="number" id="width" value="50">
+                </div>
+
+                <div class="input-box">
+                    <label>Довжина ділянки (м)</label>
+                    <input type="number" id="height" value="20">
+                </div>
+
+            </div>
+
+            <!-- Рослини -->
+            <h2>Виберіть рослини:</h2>
+
+            <div class="plants-grid">
+
+                <!-- Яблуня -->
+                <div class="plant-card" data-name="Яблуня">
+
+                    <img src="./assets/tree-list-page/apple.png" alt="">
+
+                    <h3>Яблуня</h3>
+
+                    <span>4×4 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Груша -->
+                <div class="plant-card" data-name="Груша">
+
+                    <img src="./assets/tree-list-page/pear.png" alt="">
+
+                    <h3>Груша</h3>
+
+                    <span>5×5 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Вишня -->
+                <div class="plant-card" data-name="Вишня">
+
+                    <img src="./assets/tree-list-page/cherry.png" alt="">
+
+                    <h3>Вишня</h3>
+
+                    <span>3×3 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Черешня -->
+                <div class="plant-card" data-name="Черешня">
+
+                    <img src="./assets/tree-list-page/merry.png" alt="">
+
+                    <h3>Черешня</h3>
+
+                    <span>5×5 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Слива -->
+                <div class="plant-card" data-name="Слива">
+
+                    <img src="./assets/tree-list-page/plum.png" alt="">
+
+                    <h3>Слива</h3>
+
+                    <span>3×3 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Абрикос -->
+                <div class="plant-card" data-name="Абрикос">
+
+                    <img src="./assets/tree-list-page/apricot.png" alt="">
+
+                    <h3>Абрикос</h3>
+
+                    <span>4×4 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Персик -->
+                <div class="plant-card" data-name="Персик">
+
+                    <img src="./assets/tree-list-page/peach.png" alt="">
+
+                    <h3>Персик</h3>
+
+                    <span>3×3 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+                <!-- Айва -->
+                <div class="plant-card" data-name="Айва">
+
+                    <img src="./assets/tree-list-page/quince.png" alt="">
+
+                    <h3>Айва</h3>
+
+                    <span>5×5 м</span>
+
+                    <input type="number" value="0" min="0">
+
+                </div>
+
+            </div>
+
+            <!-- Кнопка -->
+            <button id="generateBtn" class="generate-btn">
+                Згенерувати план посадки
+            </button>
+
+            <!-- Результат -->
+            <div class="result-block">
+
+                <h2>Ваш план посадки:</h2>
+
+                <!-- Сітка -->
+                <div class="planner-result">
+
+                    <div id="gardenGrid" class="garden-grid"></div>
+
+                    <!-- Легенда -->
+                    <div id="legend" class="legend"></div>
+
+                    <!-- Статистика -->
+                    <div id="stats" class="stats"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Назад -->
+            <a href="index.html" class="back-btn">
+                На головну
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="js/garden-planner.js"></script>
+
+</body>
+
+</html>
