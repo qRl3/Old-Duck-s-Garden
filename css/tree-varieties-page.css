@@ -119,6 +119,15 @@ body{
   font-weight:400;
 }
 
+.dot-separator {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
 .hero h1{
   font-size:72px;
   line-height:1.1;
