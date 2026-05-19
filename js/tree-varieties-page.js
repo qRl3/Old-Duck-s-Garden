@@ -231,7 +231,7 @@ document.getElementById("breadcrumb-tree").textContent =
   tree.title;
 
 document.getElementById("tree-title").textContent =
-  `Сорти ${tree.title.toLowerCase()}`;
+  `Популярні сорти `
   
 document.getElementById("hero-tree-name").textContent =
   tree.title;
